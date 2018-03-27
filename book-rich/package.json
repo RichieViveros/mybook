@@ -1,0 +1,15 @@
+{
+  "name": "book-rich",
+  "version": "1.0.0",
+  "description": "servidor basico para node",
+  "main": "servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Richie",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

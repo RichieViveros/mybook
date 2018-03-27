@@ -1,1 +1,90 @@
-estilos.css
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNDAwOwogIHNyYzogbG9jYWwoJ09wZW4gU2FucyBSZWd1bGFyJyksIGxvY2FsKCdPcGVuU2Fucy1SZWd1bGFyJyksIHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvb3BlbnNhbnMvdjE1L21lbThZYUdzMTI2TWlacEJBLVVGVlowZS50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQo=');
+
+*{
+	box-sizing: border-box;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto', sans-serif;
+}
+
+/********************************** 
+****** Estilos del HEADER *********
+***********************************/
+
+.header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo, .icon-menu{
+	margin: 5px;
+}
+
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #49C5C6;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/********************************** 
+******* Estilos del MENÚ **********
+***********************************/
+
+.nav{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link{
+	display: block;
+	padding: 15px;
+	background: #49C5C6;
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu__link:hover{
+	background: #fff;
+	color: #49C5C6;
+}
+
+.mostrar{
+	left: 0;
+}
+
+
+
+
+
+
+
+
+
+
