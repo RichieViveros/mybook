@@ -11,6 +11,7 @@ img{
 }
 
 body{
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -29,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
 
 .logo, .icon-menu{
 	margin: 5px;
+	color: #fff;
 }
 
 .icon-menu{
@@ -37,7 +39,6 @@ h1,h2,h3,h4,h5,h6{
 	height: 40px;
 	font-size: 30px;
 	background: #49C5C6;
-	color: #fff;
 	text-align: center;
 	line-height: 45px;
 	border-radius: 5px;
@@ -54,6 +55,7 @@ h1,h2,h3,h4,h5,h6{
 	top: 60px;
 	left: -100%;
 	width: 100%;
+	transition: 0.2s;
 }
 
 .menu{
@@ -70,7 +72,7 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 }
 
-.menu__link:hover{
+.menu__link:hover, .select{
 	background: #fff;
 	color: #49C5C6;
 }
@@ -79,12 +81,49 @@ h1,h2,h3,h4,h5,h6{
 	left: 0;
 }
 
+/********************************** 
+******* Estilos del BANNER ********
+***********************************/
 
+.banner{
+	margin-top: -60px;
+	position: relative;
+	z-index: -1;
+}
 
+			/* estilos para centrar elementos*/
 
+.banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+.banner-txt{
+	/*display: none;*/
+}
 
+.perfil{
+	background: rgba(0,0,0,.5);
+}
 
+.perfil span{
+	width: 60%;
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
 
+/********************************** 
+********* Estilos de Info *********
+***********************************/
 
-
-
+.info-columna{
+	background: #49C5C6;
+}
