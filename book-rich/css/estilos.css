@@ -89,6 +89,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: -60px;
 	position: relative;
 	z-index: -1;
+	margin-bottom: 20px;
 }
 
 			/* estilos para centrar elementos*/
@@ -102,6 +103,12 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 	text-align: center;
 }
+
+.banner-titulo{
+	display: none;
+	font-size: 15px;
+}
+
 .banner-txt{
 	/*display: none;*/
 }
@@ -112,7 +119,7 @@ h1,h2,h3,h4,h5,h6{
 
 .perfil span{
 	width: 60%;
-    display: block;
+    display: none;
     margin: 0px auto;
     padding: 20px;
     font-size: 14px;
@@ -126,4 +133,17 @@ h1,h2,h3,h4,h5,h6{
 
 .info-columna{
 	background: #49C5C6;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 20px;
 }
+
+/********************************** 
+****** Estilos de Proyectos *******
+***********************************/
+
+.section--titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #49C5C6;
+ 
