@@ -1,0 +1,13 @@
+.scrollup{
+    display: inline-block;
+    color: #004a60;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.icon-arrow-circle-up{
+	font-size: 45px;
+}

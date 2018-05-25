@@ -1,0 +1,436 @@
+/* 
+  ##Device = PC Escritorio
+  ##Screen = 1281px Para delante (pantallas más grandes)
+*/
+
+@media (min-width: 1366px) {
+
+  .header{
+    position: fixed;
+    background: #0f245bb8;
+    width: 100%;
+    height: 47px;
+    z-index: 2;
+  }
+
+  .header .contenedor{
+    position: fixed;
+    width: 85%;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -590px;
+  }
+
+  .banner{
+    margin-top: 0;
+  }
+
+  .banner--img{
+    height: 100vh !important;
+  }
+
+  .nav{
+    position: static;
+    width: auto;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .menu__link:hover{
+    background: none !important;
+    color: #fff !important;
+  }
+
+  .menu__link span{
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu__link span:hover{ 
+    transition: all .2s ease-in-out;
+    border-bottom: 2px solid #fff;
+    border-radius: 0 0 3px 3px;
+  }
+
+  .menu  span, .menu__item{
+    font-size: 14px !important;
+  }
+
+  .menu__link{
+    background: none;
+  }
+
+  .active{
+    background: #fff;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .banner-contenedor{
+    top: 35% !important;
+  }
+
+  .banner-titulo{
+    font-size: 2em;
+  }
+  
+  .banner--img{
+    height: 100vh;
+  }
+
+  .foto-perfil{
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    height: 250px;
+    width: 250px;
+  }
+
+  .foto-perfil img{
+    width: 225px;
+    height: 270px;
+  }
+
+  .perfil span{
+    display: block;
+    width: 600px;
+  }
+
+  .banner-desc{
+    height: 100px;
+  }
+
+  .resumen-info .separacion{
+    margin: 10px 0;
+  }
+
+  .separacion{
+    margin-bottom: 70px;
+  }
+
+  .main .contenedor, .resumen-info, .tabla-cont, 
+  .contacto .section-cv-header, .info-add{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .datos-contacto{
+    position: relative;
+    top: -160px;
+    font-size: 25px;
+    text-align: center !important;
+  }
+
+  .datos-contacto, .formulario{
+    display: inline-block !important;
+    width: 46%;
+    margin: 0 auto;
+  }
+
+    .section-cv-book article:nth-child(4),
+  .section-cv-book article:nth-child(5),
+  .section-cv-book article:nth-child(6){
+   display: none;
+  }
+
+  .section-cv-book-2{
+    display: inline-block !important;
+  }
+
+  .section-cv-book, .section-cv-book-2{
+    display: flex !important;
+    margin: 15px 0;
+    justify-content: space-between !important;
+  }
+
+  .info-columna{
+    width: 32%;
+  }
+
+  .btn-enviar{
+    display: block;
+    width: 180px !important;
+    margin: 10px auto !important;
+  }
+
+  .copyR{
+    font-size: 15px;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+
+  .banner-contenedor{
+    top: 40% !important;
+  }
+
+  .banner--img{
+    height: 70vh;
+  }
+
+  .banner-titulo{
+    font-size: 18px;
+    margin-top: 35px;
+  }
+
+  .banner-desc{
+    height: 111px;
+  }
+
+  .foto-perfil{
+    height: 190px;
+    width: 190px;
+  }
+
+  .foto-perfil img{
+    width: 180px;
+    height: 200px;
+  }
+
+   .perfil span{
+    font-size: 16px;
+    display: block;
+  }
+
+  .xperience{
+    margin-top: 25px;
+    width: 85%;
+    margin: 25px auto 0;
+  }
+
+  .section-cv-header, .card, .xperience, .tabla-info{
+    width: 80% !important;
+    margin: 20px auto;
+  }
+
+  .resumen-info{
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-design{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-cv-book article:nth-child(4),
+  .section-cv-book article:nth-child(5),
+  .section-cv-book article:nth-child(6){
+   display: none;
+  }
+
+  .section-cv-book-2{
+    display: inline-block !important;
+  }
+
+  .section-cv-book, .section-cv-book-2{
+    display: flex !important;
+    margin: 15px 0;
+    justify-content: space-between !important;
+  }
+
+  .info-columna{
+    width: 32%;
+  }
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px y 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .foto-perfil{
+    position: relative;
+    top: -20px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .foto-perfil img{
+    width: 150px;
+    height: 170px;
+  }
+
+  .banner--img{
+    height: 50vh;
+  }
+
+  .banner-contenedor{
+    position: absolute;
+    top: 40% !important;
+  }
+
+  .banner-titulo{
+    font-size: 18px;
+  }
+
+  .banner-desc{
+    height: 84px;
+  }
+
+  .perfil span{
+    display: block;
+  }
+  
+  .section-cv-book-2{
+    display: none;
+  }
+
+  .info-add{
+    width: 70%;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .datos-contacto{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 60px !important;
+    margin: 0 auto;
+  }
+
+  .datos-contacto p{
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+  }
+
+  .formulario{
+    display:block;
+    margin: 0 auto;
+    width: 510px;
+    color: #666666;
+    font-family:Arial;
+  }
+
+  .btn-enviar{
+    margin: 0 auto;
+    display: block;
+    width: 220px !important;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px y 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+   .banner--img{
+    height: 70vh;
+  }
+
+
+  .xperience{
+    margin-top: 25px;
+    width: 85%;
+    margin: 25px auto 0;
+  }
+
+  .section-cv-header, .card{
+    width: 80% !important;
+    margin: 20px auto;
+  }
+
+  .resumen-info{
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-design{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-cv-book article:nth-child(4),
+  .section-cv-book article:nth-child(5),
+  .section-cv-book article:nth-child(6){
+   display: none;
+  }
+
+  .section-cv-book, .section-cv-book-2{
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+  }
+
+  .info-columna{
+    width: 32%;
+  }
+ 
+}
+/* 
+  ##Device = Bajas resoluciones Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .section-cv-book-2{
+    display: none;
+  }
+
+   .section-cv-book{
+    display: inline-block;
+    margin: 15px 0;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .info-columna{
+    display: inline-block;
+    width: 48%;
+  }
+  
+  .info-columna img{
+    height: 150px;
+  }
+
+
+  
+}
+
+/* 
+  ##Device = De más Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .section-cv-book article:nth-child(4),
+  .section-cv-book article:nth-child(5),
+  .section-cv-book article:nth-child(6){
+   display: none;
+  }
+  
+  .titulo-seccion{
+    width: 100%;
+  }
+
+  .barra-titulo{
+    display: none;
+  }
+
+  .header-section-bar{
+    display: none;
+  }
+  
+}

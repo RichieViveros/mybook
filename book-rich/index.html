@@ -7,92 +7,744 @@
 		<link rel="stylesheet" href="css/estilos.css">
 		<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
 		<link rel="stylesheet" href="css/styles.css">
-
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/mediaqueries.css">
+		<link rel="stylesheet" href="css/slide.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/btn-arriba.css">
+		<!-- <link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/swiper.css"> -->
+		<link href="https://file.myfontastic.com/YUThEnMJ9vNfr2uwPy7NGP/icons.css" rel="stylesheet">
 		<!-- <link href="https://file.myfontastic.com/YUThEnMJ9vNfr2uwPy7NGP/icons.css" rel="stylesheet"> -->
 	</head>
 	
 	<body>
 
-	<header class="header">
-		<div class="contenedor">
-			<h1 class="logo">Ricardo Viveros</h1>
-			<span class="icon-menu" id="btn-menu"></span>
-			<nav class="nav" id="nav">
-				<ul class="menu">
-					<li class="menu__item"><a class="menu__link select" href="#">Inicio</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Habilidades</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Portafolio</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Experiencia</a></li>
-					<li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
-	<div class="banner">
-		<img src="img/e-mail-empresarial.jpg" alt="" class="banner--img">
-		<div class="contenedor">
-			<h2 class="banner-titulo">MI BOOK PROFESIONAL</h2>
-			<p class="banner-txt">UI / UX Designer</p>
-			<article class="perfil">
-				<span >Implementar metodologías y procesos de creación de imágenes, técnicas de expresión gráfica y tecnologías computacionales, con el fin de lograr una interfaz visua funcional para facilitar la interacción de los usuarios con las aplicaciones móviles y sitios web responsivos.</span>
-			</article>
-			
-		</div>
-	</div>
-	<main class="main">
-		<div class="contenedor">
-			<section class="info">
-				<article class="info-columna">
-					<img src="img/lanota.png" alt="" class="info-img">
-					<h2 class="info-titulo">La Nota</h2>
-					<p class="info-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iure sit fugiat eligendi dicta nemo soluta vel, perspiciatis error quidem.</p>
-				</article>
-				<article class="info-columna">
-					<img src="img/arcadio.png" alt="" class="info-img">
-					<h2 class="info-titulo">Dr. Arcadio</h2>
-					<p class="info-txt">Quasi enim earum tempore corrupti blanditiis facilis ad sunt, culpa unde officia. Illo exercitationem perferendis id, earum porro fuga tenetur.</p>
-				</article>
-				<article class="info-columna">
-					<img src="img/sneyder.png" alt="" class="info-img">
-					<h2 class="info-titulo">Sneyder</h2>
-					<p class="info-txt">Nemo fugiat adipisci natus vitae, est animi error, ducimus deserunt culpa hic eaque mollitia, et odit nesciunt. Eveniet, ullam, ex.</p>
-				</article>
-			</section>
-			<section class="trabajos">
-				<h2 class="section--titulo">Mis proyectos</h2>
-				<div class="trabajos--columna">
-					<img src="img/" alt="" class="trabajos--img">
-					<div class="trabajos--descripcion">
-						<h3 class="trabajos--titulo"></h3>
-						<p class="trabajos--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sit numquam sequi dolorum, possimus alias.</p>
-					</div>
-				</div>
-				<div class="trabajos--columna">
-					<img src="img/" alt="" class="trabajos--img">
-					<div class="trabajos--descripcion">
-						<h3 class="trabajos--titulo"></h3>
-						<p class="trabajos--txt">Nostrum delectus eos eveniet et placeat ipsa! Nobis non quia obcaecati sint et deleniti expedita.</p>
-					</div>
-				</div>
-				<div class="trabajos--columna">
-					<img src="img/" alt="" class="trabajos--img">
-					<div class="trabajos--descripcion">
-						<h3 class="trabajos--titulo"></h3>
-						<p class="trabajos--txt">Consequatur impedit quos qui quas voluptatem, quo, vitae quae minima dolore odit nam libero, dignissimos!</p>
-					</div>
-				</div>
-				<div class="trabajos--columna">
-					<img src="img/" alt="" class="trabajos--img">
-					<div class="trabajos--descripcion">
-						<h3 class="trabajos--titulo"></h3>
-						<p class="trabajos--txt">Dolor amet voluptates iure, et, veritatis, doloremque impedit dolorem aut blanditiis quia nam vitae deserunt!</p>
-					</div>
-				</div>
-			</section>
-		</div>
-	</main>
+		<!--  MENÚ -->
 
-	<script src="js/menu.js"></script>
+		<header class="header">
+			<div class="contenedor">
+				<h1 class="logo animated bounceInLeft">Ricardo Viveros</h1>
+				<!--<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 80">
+					<style type="text/css">
+						<![CDATA[
+							text {
+							filter: url(#filter);
+							fill: white;
+				    		font-family: 'Share Tech Mono', sans-serif;
+				    		font-size: 60px;
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+				     		}
+						]]>
+					</style>
+					<defs>
+						<filter id="filter">
+							<feFlood flood-color="black" result="black" />
+							<feFlood flood-color="red" result="flood1" />
+							<feFlood flood-color="limegreen" result="flood2" />
+							<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+							<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+							<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+							<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
+							<feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+							<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+
+				 			<feMerge x="0" width="100%" result="merge1">
+								<feMergeNode in = "black" />
+								<feMergeNode in = "comp1" />
+								<feMergeNode in = "off1b" />
+
+								<animate 
+									attributeName="y" 
+						    		id = "y"
+						    		dur ="4s"
+						    		
+						    		values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+
+						    		keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+						    		repeatCount = "indefinite" />
+				 
+								<animate attributeName="height" 
+						    		id = "h" 
+						    		dur ="4s"
+						    		
+						    		values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+
+						    		keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+						    		repeatCount = "indefinite" />
+							</feMerge>
+				 			
+
+				 			<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+								<feMergeNode in = "black" />
+								<feMergeNode in = "comp2" />
+								<feMergeNode in = "off2b" />
+
+								<animate attributeName="y" 
+						    		id = "y"
+						    		dur ="4s"
+						    		values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' 
+
+						    		keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+
+				 		    		repeatCount = "indefinite" />
+				 
+								<animate attributeName="height" 
+						    		id = "h"
+						    		dur = "4s"
+									
+									values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+
+						    		keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+						    		 
+						    		repeatCount = "indefinite" />
+						    </feMerge>
+							
+						 	<feMerge>
+				 				<feMergeNode in="SourceGraphic" />	
+
+								<feMergeNode in="merge1" /> 
+				 				<feMergeNode in="merge2" />
+
+						    </feMerge>
+					    </filter>
+					</defs>
+					<g>
+						<text x="0" y="100">BIENVENIDO</text>
+					</g>
+				</svg>-->
+
+				<div class="hamburger" id="btn-menu" >
+			   	 	<div class="hamburger-inner"></div>
+				</div>
+			 
+				<!-- <span class="icon-menu" id="btn-menu"></span> -->
+				<nav class="nav" id="nav">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link scroll active" href="#home"><span class="icon-home"> Inicio</span> </a></li>
+						<li class="menu__item"><a class="menu__link scroll" href="#secc1"><span class="icon-pencil"> Resúmen Laboral</span> </a></li>
+						<li class="menu__item"><a class="menu__link scroll" href="#secc2"><span class="icon-skills"> Skills</span> </a></li>
+						<li class="menu__item"><a class="menu__link scroll" href="#secc3"><span class="icon-graduation-cap"> Experiencia</span> </a></li>
+						<li class="menu__item"><a class="menu__link scroll" href="#secc4"><span class="icon-briefcase"> Book</span> </a></li>
+						<li class="menu__item"><a class="menu__link scroll" href="#secc5"><span class="icon-phone"> Contacto</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!--  /MENÚ -->
+
+		<!--  BANNER -->
+	
+		<div class="banner" id="home">
+			<img src="img/e-mail-empresarial.jpg" alt="" class="banner--img">
+			<div class="banner-contenedor">
+				<span class="foto-perfil animated zoomIn">
+					<img src="img/infantil.jpg" alt="">
+				</span>
+				<div class="banner-desc">
+					<h2 class="banner-titulo animated bounceInRight">MI BOOK PROFESIONAL</h2>
+					<p class="banner-txt animated bounceInLeft">UI / UX Designer . 10558954-C1</p>	
+					<article class="perfil ">
+						<span class="animated bounceInUp">PERFIL: <br>
+							Implementar metodologías y procesos de creación de imágenes, técnicas de expresión gráfica y tecnologías computacionales, con el fin de lograr una interfaz visua funcional para facilitar la interacción de los usuarios con las aplicaciones móviles y sitios web responsivos.
+						</span>
+					</article>
+				</div>		
+			</div>
+		</div>
+
+		<!--  /BANNER -->
+
+		<!--  INFORMACIÓN PRINCIPAL -->
+
+		<main class="main">
+			<div class="contenedor">
+
+				<!--  SECCIÓN DE RESÚMEN LABORAL -->
+				<hr class="separacion" id="secc1">
+				<section class="section-cv">
+					<header class="section-cv-header" >
+						<div class="titulo-seccion wow bounceInLeft">
+							<span class="icon-section">
+								<span class="icon-pencil"></span>
+							</span>
+							<h2 class="cortar">Resúmen Laboral</h2>
+						</div>
+						<div class="barra-titulo wow bounceInRight">
+							<span class="header-section-bar"></span>
+						</div>
+					</header>
+					<div class="resumen-info">
+						<article>
+							<p>
+								Mi experiencia profesional como <strong>diseñador web UI/UX</strong> comenzó en el año 2016, siendo primeramente trabajador independiente (freelancer), por un año. En ese periodo realicé dos proyectos, los cuales fueron:
+							</p>
+							<p>
+								<b>Sitio web responsivo</b> del Dr. Arcadio Barrón y López (médico militar especialista en oftalmología).<br> 
+								<strong>Herramientas y/o tecnologías utilizadas:</strong><br>
+								<ul>
+									<li>Adobe Muse</li>
+									<li>Filezilla</li>
+									<li>Sublime text</li>
+									<li>Bootstrap</li>
+								</ul> 
+								<hr class="separacion">
+							</p>
+							<p>
+								<strong>Sitio web responsivo</strong> para la empresa <b>SNEYDER</b> (negocio de mangueras y conexiones industriales). <br> 
+								<strong>Herramientas y/o tecnologías utilizadas:</strong><br>
+								<ul>
+									<li>HTML5</li>
+									<li>CSS3</li>
+									<li>Bootstrap</li>
+									<li>jQuery</li>
+									<li>Photoshop</li>
+									<li>Illustrator</li>
+									<li>Sublime text</li>
+									<li>Dreamweaver</li>
+								</ul>
+							</p>
+							<hr class="separacion"> 
+							<p>
+								El segundo año de mi experiencia la llevé a cabo en la empresa <b>GCE</b> (Gabinete de Comunicación Estratégica), ubicada en Paseo de la Reforma 199, desarrollando la interfaz gráfica de las aplicaciones que se encontraban ya avanzadas. Colaboré en el proyecto de <b>EXITPOLL</b> el cual trata de hacer la recolección de votos de todos los ciudadanos para los candidatos a gobernadores de los diferentes estados de la República Mexicana. También colaboré en la intefaz visual de la empresa <b>VADSA</b>, la cual surgió dentro de GCE. Dicho proyecto es el administrador de los diferentes servicios que ofrece la empresa, asi como tambíen el registro de personal, permisos de seguridad, etc.
+							</p>
+							<p>
+								El proyecto que, más que una competencia, fue un reto personal, ya que dicho proyecto lo comencé desde cero hasta su producción junto con dos compañeros quienes se encargaron de la lógica y el backend correspondiente, dentro de GCE.<br>
+								<b>Sitio web responsivo</b> <a href="http://lanota.mx/#/lanota" target="_blank">La Nota</a> el cual pueden consultar desde cualquier navegador de internet. Detrás de este proyecto se incluyó también su gestor de contenido el cual no es visible más que para las personas que gestionan la información del sitio. <br>
+								<strong>Herramientas y/o tecnologías utilizadas:</strong><br>
+								<ul>
+									<li>HTML5</li>
+									<li>CSS3</li>
+									<li>Bootstrap</li>
+									<li>jQuery</li>
+									<li>Angular 2</li>
+									<li>NodeJS</li>
+									<li>Javascript ES6</li>
+									<li>MySQL</li>
+									<li>Sublime text</li>
+									<li>JIRA</li>
+									<li>Source Tree</li>
+									<li>Control de Versiones Git</li>
+								</ul>
+								<b>NOTA:</b> En cuanto a las tecnologías de <i>Angular 2</i> y <i>NodeJS</i>, en lo particular sólo tengo los conocimientos básicos en cuanto a su instalación.								
+							</p>
+							<hr class="separacion"> 	
+							<p>
+								Y el último proyecto en el que fui partícipe fue en la aplicación del <b>AICM</b> (aeropuerto de México). El cual tambíen realicé algunos cambios visuales, así como también realizar trazos vectoriales con ayuda de Illustrator para generar el contenido de logotipos e iconografía.
+							</p>
+							<hr class="separacion">
+							<p>
+								Para la mayoría de los proyectos empleaba herramientas como <b>PS</b> y <b>AI</b>. <b>Sublime text</b>. <b>MarvelApp</b>, <b>Adobe XD</b>., <b>JIRA</b>, las plataformas de <b>BITBUCKET</b> y <b>GITHUB</b>, <b>Source Tree</b>, y la terminal de Mac. Así como la metodolgía <b>SCRUM</b> de igual manera se llevaba a cabo.
+							</p>
+						</article>
+					</div>	
+				</section>
+				<!--  /SECCIÓN DE RESÚMEN LABORAL -->
+
+				<hr class="separacion" id="secc2">
+
+				<!--  SECCIÓN DE HABILIDADES/CAPACIDADES -->
+				<section class="section-cv">
+					<header class="section-cv-header">
+						<div class="titulo-seccion wow bounceInLeft">
+							<span class="icon-section">
+								<span class="icon-skills"></span>
+							</span>
+							<h2 class="cortar">Skills</h2>
+						</div>
+						<div class="barra-titulo wow bounceInRight">
+							<span class="header-section-bar"></span>
+						</div>
+					</header>
+					<div class="resumen-info">
+						<article>
+							<div id="skills" class="col-md-5 col-centered">
+								<h4>LENGUAJES</h4>
+								<div class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+									<div class="skillbar-bar" style="background: #e67e22;"></div>
+									<div class="skill-bar-percent">90%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="85%">
+									<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+									<div class="skillbar-bar" style="background: #3498db;"></div>
+									<div class="skill-bar-percent">85%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>LIBRERÍAS</h4>
+
+								<div class="skillbar clearfix " data-percent="5%">
+									<div class="skillbar-title" style="background: rgba(0,0,0,.4);"><span>jQuery</span></div>
+									<div class="skillbar-bar" style="background: #0868ab;"></div>
+									<div class="skill-bar-percent">5%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="100%">
+									<div class="skillbar-title" style="background: rgba(0,0,0,.4);"><span>Animate.css</span></div>
+									<div class="skillbar-bar" style="background: #0868ab;"></div>
+									<div class="skill-bar-percent">100%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="100%">
+									<div class="skillbar-title" style="background: rgba(0,0,0,.4);"><span>WoW.js</span></div>
+									<div class="skillbar-bar" style="background: #0868ab;"></div>
+									<div class="skill-bar-percent">100%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>FRAMEWORK</h4>
+
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title" style="background: #614789;"><span>Bootstrap</span></div>
+									<div class="skillbar-bar" style="background: #5a68a5;"></div>
+									<div class="skill-bar-percent">80%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>DISEÑO</h4>
+
+								<div class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title" style="background: #403229;"><span>Illustrator</span></div>
+									<div class="skillbar-bar" style="background: #fe761d;"></div>
+									<div class="skill-bar-percent">90%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix" data-percent="85%">
+									<div class="skillbar-title" style="background: #0a3e4f;"><span>Photoshop</span></div>
+									<div class="skillbar-bar" style="background: #43c3ed;"></div>
+									<div class="skill-bar-percent">85%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title" style="background: #7d1e4a;"><span>InDesign</span></div>
+									<div class="skillbar-bar" style="background: #da4c96;"></div>
+									<div class="skill-bar-percent">70%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>MAQUETACIÓN</h4>
+
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title" style="background: #2a0018;"><span>Adobe XD</span></div>
+									<div class="skillbar-bar" style="background: #be2496;"></div>
+									<div class="skill-bar-percent">80%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title" style="background: #4576b9;"><span>Invision+Craft</span></div>
+									<div class="skillbar-bar" style="background: rgb(232, 30, 97);"></div>
+									<div class="skill-bar-percent">70%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="95%">
+									<div class="skillbar-title" style="background: #124e8c;"><span>MarvelApp</span></div>
+									<div class="skillbar-bar" style="background: #00b4ff;"></div>
+									<div class="skill-bar-percent">95%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>CMS</h4>
+
+								<div class="skillbar clearfix " data-percent="40%">
+									<div class="skillbar-title" style="background: #111;"><span>WordPress</span></div>
+									<div class="skillbar-bar" style="background: #32373c;"></div>
+									<div class="skill-bar-percent">40%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>CLIENTE FTP</h4>
+
+								<div class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-title" style="background: #860E0E;"><span>Filezilla</span></div>
+									<div class="skillbar-bar" style="background: #b90000;"></div>
+									<div class="skill-bar-percent">50%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>SERVIDOR LOCAL</h4>
+
+								<div class="skillbar clearfix " data-percent="40%">
+									<div class="skillbar-title" style="background: #a54415;"><span>XAMPP</span></div>
+									<div class="skillbar-bar" style="background: #fb7a24;"></div>
+									<div class="skill-bar-percent">40%</div>
+								</div> <!-- End Skill Bar -->
+
+								<h4>CONTROL DE TAREAS</h4>
+
+								<div class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title" style="background: #2684ff;"><span>JIRA/Bitbucket</span></div>
+									<div class="skillbar-bar" style="background: #214f81;"></div>
+									<div class="skill-bar-percent">70%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title" style="background: #3d2d00;"><span>Control Git</span></div>
+									<div class="skillbar-bar" style="background: #f54b28;"></div>
+									<div class="skill-bar-percent">80%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title" style="background: #031D37;"><span>Source Tree</span></div>
+									<div class="skillbar-bar" style="background: #225C97;"></div>
+									<div class="skill-bar-percent">80%</div>
+								</div> <!-- End Skill Bar -->
+
+								<div class="skillbar clearfix " data-percent="85%">
+									<div class="skillbar-title" style="background: #124e8c;"><span>SCRUM</span></div>
+									<div class="skillbar-bar" style="background: #4288d0;"></div>
+									<div class="skill-bar-percent">85%</div>
+								</div> <!-- End Skill Bar -->
+							</div>
+						</article>
+					</div>	
+				</section>
+				<!--  /SECCIÓN DE HABILIDADES/CAPACIDADES -->
+
+				<hr class="separacion" id="secc3">
+
+				<!--  SECCIÓN DE TABLA DE EXPERIENCIA -->
+				<section class="section-cv">
+					<header class="section-cv-header">
+						<div class="titulo-seccion wow bounceInLeft">
+							<span class="icon-section">
+								<span class="icon-graduation-cap"></span>
+							</span>
+							<h2 class="cortar">Experiencia Laboral</h2>
+						</div>
+						<div class="barra-titulo wow bounceInRight">
+							<span class="header-section-bar"></span>
+						</div>
+					</header>
+					<div class="xperience">
+						<p><b>Plataforma de trabajo:</b> Windows &amp Mac</p>
+						<p>
+							<small><b>Sólo para dispositivos móviles:</b> Ver tabla en landscape (vista panorámica).<span class="icon-mobile"></span></small>					
+						</p>
+					</div>
+					<div class="tabla-cont">
+						<table class="tabla-info">
+							<caption>Experiencia laboral</caption>
+							<tr>
+								<th>Empresa</th>
+								<th>Puesto</th>
+								<th style="width: 25%;">Periodo</th>
+								<th style="width: 25%;">Actividades Realizadas</th>
+								<th style="width: 25%;">Herramientas</th>
+							</tr>
+							<tr>
+								<td>GCE</td>
+								<td>Diseñador UI/UX</td>
+								<td>Marzo 2017 - Marzo 2018</td>
+								<td>Diseño de interfaz y experiencia de usuario para aplicaciones móviles y sitios web a través de html5 y css3.</td>
+								<td>Illustrator, Photoshop, Adobe XD, MarvelApp, Sublime text.</td>
+							</tr>
+							<tr>
+								<td>N/A</td>
+								<td>Diseñador UI/UX (freelancer)</td>
+								<td>Enero 2016 - Enero 2017</td>
+								<td>Diseño de interfaz y experiencia de usuario para aplicaciones móviles y sitios web a través de html5 y css3.</td>
+								<td>Illustrator, Photoshop, Sublime text, Adobe Muse, Dreamweaver.</td>
+							</tr>
+							<tr>
+								<td>The Italian Coffee Company</td>
+								<td>Administrador de franquicias</td>
+								<td>Enero 2016 - Enero 2017</td>
+								<td>Inventarios, relación de gastos, administración de personal, pago de nómina, preparación de bebidas y alimentos. Trato con proveedores y personal de trabajo. Redacción de reportes de ventas. Cortes de venta.</td>
+								<td>Software de la empresa.</td>
+							</tr>
+							<tr>
+								<td>Smart Print</td>
+								<td>Diseñador Gráfico</td>
+								<td>Abril 2015 - Agosto 2015</td>
+								<td>Soluciones gráficas, diseño de logotipos, impresiones en gran formato, sublimado, corte vinil, estampado textil.</td>
+								<td>Illustrator, Photoshop.</td>
+							</tr>
+							<tr>
+								<td>Arzobispado de Puebla</td>
+								<td>Diseñador Gráfico</td>
+								<td>Agosto 2012 - Agosto 2013</td>
+								<td>Edicion de banners, diseño editorial.</td>
+								<td>Illustrator, Photoshop, InDesign.</td>
+							</tr>
+						</table>
+					</div>				
+				</section>
+				<!--  /SECCIÓN DE TABLA DE EXPERIENCIA -->
+
+				<hr class="separacion" id="secc4">
+
+				<!--  SECCIÓN DE BOOK -->				
+				<section class="section-cv">
+					<header class="section-cv-header">
+						<div class="titulo-seccion wow bounceInLeft">
+							<span class="icon-section">
+								<span class="icon-briefcase"></span>
+							</span>
+							<h2 class="cortar">Book</h2>
+						</div>
+						<div class="barra-titulo wow bounceInRight">
+							<span class="header-section-bar"></span>
+						</div>
+					</header>
+				</section>
+
+				<div class="section-design"><h2>DISEÑO WEB</h2></div>
+
+				<section class="section-cv-book">
+					<article class="info-columna wow bounceIn">
+						<a href="http://lanota.mx/#/lanota" target="_blank"><img src="img/lanota.jpg" alt="" class="info-img"></a>
+						<h2 class="info-titulo">La Nota</h2>
+						<p class="info-txt">
+							<b>Sitio web responsivo</b> para la Nota el cual recopila las notas principales de diferentes periódicos.
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/arcadio.jpg" alt="" class="info-img">
+						<h2 class="info-titulo">Dr. Arcadio</h2>
+						<p class="info-txt">
+							<b>Sitio web responsivo</b> del Dr. Arcadio Barrón y López (médico militar especialista en oftalmología).<br>
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/sneyder.jpg" alt="" class="info-img">
+						<h2 class="info-titulo">Sneyder</h2>
+						<p class="info-txt">
+							<strong>Sitio web responsivo</strong> para la empresa <b>SNEYDER</b> (negocio de mangueras y conexiones industriales). 
+					</article>
+					<article class="info-columna wow bounceIn">
+						<a href="https://marvelapp.com/6955d28" target="_blank"><img src="img/SDDI.JPG" alt="" class="info-img"></a>
+						<h2 class="info-titulo">SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema de Documentación Digital Indexado</b>, es un prototipo del proyecto realizado en MarvelApp.
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/SDDI-Login.JPG" alt="" class="info-img">
+						<h2 class="info-titulo">UI UX SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema maquetado</b> en html5 y css3.<br>
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/SDDI.png" alt="" class="info-img">
+						<h2 class="info-titulo">UI UX SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema maquetado</b> en html5 y css3.<br> 
+					</article>
+				</section>
+				<section class="section-cv-book-2">
+					<article class="info-columna wow bounceIn">
+						<a href="https://marvelapp.com/6955d28" target="_blank"><img src="img/SDDI.JPG" alt="" class="info-img"></a>
+						<h2 class="info-titulo">SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema de Documentación Digital Indexado</b>
+							<p>Prototipo del proyecto realizado en MarvelApp.</p>
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/SDDI-Login.JPG" alt="" class="info-img">
+						<h2 class="info-titulo">UI UX SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema maquetado</b> en html5 y css3.<br>
+						</p>
+					</article>
+					<article class="info-columna wow bounceIn">
+						<img src="img/SDDI.png" alt="" class="info-img">
+						<h2 class="info-titulo">UI UX SDDI</h2>
+						<p class="info-txt">
+							<b>Sistema maquetado</b> en html5 y css3.<br> 
+					</article>
+				</section>
+
+				<div class="section-design"><h2>DISEÑO GRÁFICO</h2></div>
+
+				<section class="section-cv" style="margin-bottom: 20px;">
+					<div class="card wow zoomIn">
+					<div class="footer"><a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">◀ Atrás</a><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Siguiente ▶</a></div>
+					  <div class="products">
+					    <div class="product active" product-id="1">
+					      <div class="thumbnail"><img src="img/perfil-01.jpg"/></div>
+					      <h3 class="title">NutriFit</h3>
+					      <p class="description">Logotipo creado para un negocio de una clínica de nutricion en la ciudad de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="2">
+					      <div class="thumbnail"><img src="img/cubierta-carnetNF.JPG"/></div>
+					      <h3 class="title">Cubierta Carnet NutriFit</h3>
+					      <p class="description">Diseño realizado para la cubierta del carnet de Nutrifit.</p>
+					    </div>
+					    <div class="product" product-id="3">
+					      <div class="thumbnail"><img src="img/carnetNF1.jpg"/></div>
+					      <h3 class="title">Formato carnet NutriFit.</h3>
+					      <p class="description">Formato realizado para el carnet de Nutrifit.</p>
+					    </div>
+					    <div class="product" product-id="4">
+					      <div class="thumbnail"><img src="img/cardpresentacionNF.JPG"/></div>
+					      <h3 class="title">Tarjeta NutriFit.</h3>
+					      <p class="description">Diseño para la tarjeta de presentación.</p>
+					    </div>
+					    <div class="product" product-id="5">
+					      <div class="thumbnail"><img src="img/bannerNF1.png"/></div>
+					      <h3 class="title">Banner NutriFit</h3>
+					      <p class="description">Banner publicitario para portada de facebook de NutriFit.</p>
+					    </div>
+					    <div class="product" product-id="6">
+					      <div class="thumbnail"><img src="img/bannerNF2.jpg"/></div>
+					      <h3 class="title">Banner NutriFit</h3>
+					      <p class="description">Banner publicitario para portada de facebook de NutriFit.</p>
+					    </div>
+					    <div class="product" product-id="7">
+					      <div class="thumbnail"><img src="img/cartelArqui.JPG"/></div>
+					      <h3 class="title">Cartel CODICOS</h3>
+					      <p class="description">Cartel para el 1er ecuentro de Agentes de la Pastoral dela Comunicación.</p>
+					    </div>
+					    <div class="product" product-id="8">
+					      <div class="thumbnail"><img src="img/AmbienteWeb.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="9">
+					      <div class="thumbnail"><img src="img/AscensiónSr.Web.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="10">
+					      <div class="thumbnail"><img src="img/MovilPadreTwitter.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="11">
+					      <div class="thumbnail"><img src="img/PentecostesWeb.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="12">
+					      <div class="thumbnail"><img src="img/PortadaCorazonTw.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="13">
+					      <div class="thumbnail"><img src="img/RadioPalafoxWeb.jpg"/></div>
+					      <h3 class="title">Banner Arquidiócesis</h3>
+					      <p class="description">Banner para el sitio web de la Arquidiócesis de Puebla.</p>
+					    </div>
+					    <div class="product" product-id="14">
+					      <div class="thumbnail"><img src="img/sneyderLogo.JPG"/></div>
+					      <h3 class="title">Logo Sneyder</h3>
+					      <p class="description">Logotipo creado para un negocio de mangueras y conexiones industriales.</p>
+					    </div>
+					    <div class="product" product-id="15">
+					      <div class="thumbnail"><img src="img/cubiertaCartaPSneyder.JPG"/></div>
+					      <h3 class="title">Carta Presentación Sneyder</h3>
+					      <p class="description">Diseño de formato para impresión tamaño carta.</p>
+					      <a href="files/Carta-presentación-Sneyder.pdf" download="CartaSneyder">Descargar Archivo</a>
+					    </div>
+					    <div class="product" product-id="16">
+					      <div class="thumbnail"><img src="img/splash.JPG"/></div>
+					      <h3 class="title">Logo Splash</h3>
+					      <p class="description">Logotipo diseñado para un autolavado.</p>
+					    </div>
+					    <div class="product" product-id="17">
+					      <div class="thumbnail"><img src="img/burncupLogo.jpg"/></div>
+					      <h3 class="title">Logo BurnCup</h3>
+					      <p class="description">Logotipo diseñado para proyecto escolar.</p>
+					    </div>
+					    <div class="product" product-id="18">
+					      <div class="thumbnail"><img src="img/washington.jpg"/></div>
+					      <h3 class="title">Cubierta libro</h3>
+					      <p class="description">Diseño de cubierta para libro del Instituto Washington.</p>
+					    </div>
+					  </div>
+					  
+					</div>
+				</section>
+				<!--  /SECCIÓN DE BOOK -->
+
+				<hr class="separacion">
+
+				<!--  SECCION INFORMACIÓN ADICIONAL-->
+				<section class="section-cv" style="margin-top: 20px;">
+					<header class="section-cv-header">
+						<div class="titulo-seccion wow bounceInLeft">
+							<span class="icon-section">
+								<span class="icon-files"></span>
+							</span>
+							<h2 class="cortar">Información Adicional</h2>
+						</div>
+						<div class="barra-titulo wow bounceInRight">
+							<span class="header-section-bar"></span>
+						</div>
+					</header>
+					<article class="info-add">
+						<h3 style="text-indent: 20px;">Certificados:</h3>
+						<p style="text-indent: 0px;">
+						<b>Nombre</b>: Bulats Cambridge Assessment English
+						<b>Institución:</b> Universidad de Oriente<br>
+						<b>Periodo:</b> Octubre 2014 (Sólo un examen) A2 BÁSICO.<br>
+						<b>Comprobante:</b> Candidate number TUQS63D3 Certificado.</p>
+						<h3 style="text-indent: 20px;">Documentación:</h3>
+						<p style="text-indent: 0px;">
+							<b>Licencia de conducir:</b> Tipo A. <br>
+						</p>
+					</article>
+				</section>
+				<!--  SECCION INFORMACIÓN ADICIONAL-->
+
+			</div>
+		</main>
+
+		<!--  /INFORMACIÓN PRINCIPAL -->
+
+		<a href="#" class="scrollup"><span class="icon-arrow-circle-up"></span></a>
+
+		<!--  FOOTER-->
+		<hr class="separacion" id="secc5">
+		<footer class="contacto">
+			<header class="section-cv-header">
+				<div class="titulo-seccion wow bounceInLeft" style="margin-top: 15px;">
+					<span class="icon-section" style="border: 2px solid #fff;">
+						<span class="icon-phone" style="color:#fff;"></span>
+					</span>
+					<h2>Contacto</h2>
+				</div>
+				<div class="barra-titulo wow bounceInRight">
+					<span class="header-section-bar" style="background: #fff; margin-top: 15px;"></span>
+				</div>
+			</header>
+
+			<div class="datos-contacto">
+				<p><span class="icon-whatsapp"></span>
+				552 269 5813</p>
+				<p><span class="icon-envelope"></span> viverosky96@gmail.com</p>
+			</div>
+			
+			<section class="formulario">
+				<form action="contacto.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
+					<label for="email">Email:</label>
+					<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje" required=""></textarea>
+					<button class="btn-enviar" id="submit" type="submit" name="submit" value="Enviar">Enviar <i class="icon-paper-plane"></i></button>
+				</form>
+			</section>
+			<hr class="separacion" style="background: #fff;">
+
+			<small class="copyR">&copy Diseño crado por Ricardo Viveros - 2018</small>
+		</footer>
+
+		<!--  /FOOTER -->
+	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/slide.js"></script>
+		<script src="js/skills.js"></script>
+		<script src="js/btn-arriba.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/menu-active.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+            <script>
+              new WOW().init();
+            </script>
+
 	</body>
 </html>

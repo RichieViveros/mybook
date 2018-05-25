@@ -8,6 +8,7 @@
 img{
 	display: block;
 	max-width: 100%;
+	margin: 0 auto;
 }
 
 body{
@@ -46,6 +47,68 @@ h1,h2,h3,h4,h5,h6{
 	cursor: pointer;
 }
 
+
+/********************************** 
+**** Estilos del Botón-Menú  ******
+***********************************/
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    padding: 8px;
+    width: 57px;
+    min-height: 40px;
+    z-index: 2;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: #fff;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    content: '';
+    transition-timing-function: ease;
+    transition-duration: .2s;
+    transition-property: opacity,-webkit-transform;
+    transition-property: transform,opacity;
+    transition-property: transform,opacity,-webkit-transform;
+}
+
+.hamburger-inner:before {
+    top: 10px;
+}
+.hamburger-inner:after {
+    top: 20px;
+}
+
+.hamburger.open .hamburger-inner {
+	 -webkit-transform: translate3d(0,10px,0) rotate(45deg);
+    transform: translate3d(0,10px,0) rotate(45deg);
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -moz-box-shadow: box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -ms-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -o-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+}
+
+.hamburger.open .hamburger-inner:after {
+	-webkit-transform: translate3d(0,-20px,0) rotate(-90deg);
+    transform: translate3d(0,-20px,0) rotate(-90deg);
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -moz-box-shadow: box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -ms-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    -o-box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+    box-shadow: 0px 0px 6px 3px rgba(255,255,255,.6);
+}
+.hamburger.open .hamburger-inner:before {
+	-webkit-transform: translate3d(0,-10px,0) rotate(90deg);
+    transform: translate3d(0,-10px,0) rotate(90deg);
+    opacity: 0;
+
+}
+
 /********************************** 
 ******* Estilos del MENÚ **********
 ***********************************/
@@ -56,6 +119,7 @@ h1,h2,h3,h4,h5,h6{
 	left: -100%;
 	width: 100%;
 	transition: 0.2s;
+	z-index: 1;
 }
 
 .menu{
@@ -72,7 +136,7 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 }
 
-.menu__link:hover, .select{
+.menu__link:hover, .active{
 	background: #fff;
 	color: #49C5C6;
 }
@@ -92,29 +156,76 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom: 20px;
 }
 
+.banner--img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
 			/* estilos para centrar elementos*/
 
-.banner .contenedor{
+.banner .banner-contenedor{
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	width: 100%;
 	color: #fff;
 	text-align: center;
+	margin-top: 5px;
+}
+
+.foto-perfil{
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px 40px;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+.foto-perfil img{
+	object-fit: cover;
+    width: 100px;
+    height: 120px;
+    max-width: none;
+    position: relative;
+    top: -10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.banner-desc{
+	padding-top: 15px;
+	height: 80px;
+	background: rgba(4, 26, 90, 0.71);
 }
 
 .banner-titulo{
-	display: none;
+	margin-top: 8px;
+    margin-bottom: 5px;
+	display: block;
 	font-size: 15px;
 }
 
 .banner-txt{
-	/*display: none;*/
+	margin: 0;
+	display: block;
 }
 
 .perfil{
-	background: rgba(0,0,0,.5);
+	margin-top: 16px;
+	background: rgba(4, 26, 90, 0.71);
 }
 
 .perfil span{
@@ -128,22 +239,331 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /********************************** 
-********* Estilos de Info *********
+********* Estilos de generales ******
 ***********************************/
 
-.info-columna{
-	background: #49C5C6;
-	color: #fff;
-	padding: 15px;
+
+main{
+	padding: 0 5px;
+	background: -moz-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,247,247,1)), color-stop(55%, rgba(255,255,255,1)), color-stop(100%, rgba(247,247,247,1)));
+	background: -webkit-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+	background: -o-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+	background: -ms-linear-gradient(left, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+	background: linear-gradient(to right, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+    /*background: #49c5c6;*/
+}
+
+hr.separacion {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(73, 197, 198), rgba(0, 0, 0, 0));
+}
+
+.section-cv{
+	margin: 15px 0;
+}
+
+.section-cv-header{
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
 	margin-bottom: 20px;
+}
+
+.titulo-seccion{
+    width: 50%;
+    position: relative;
+}
+
+.barra-titulo{
+	width: 50%;
+	position: relative;
+}
+
+.icon-section{
+	display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #49C5C6;
+    margin: 0 4px 0;
+    border-radius: 4px 12px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    padding: 10px 7px;
+}
+
+.menu .icon-home, .menu .icon-pencil, .menu .icon-skills, .menu .icon-briefcase, .menu .icon-phone{
+	font-size: 14px;
+	line-height: 1;
+    top: 2px;
+    position: relative;
+}
+
+.main .icon-pencil, .main .icon-graduation-cap, .main .icon-briefcase, .main .icon-skills, .main .icon-files, .contacto .icon-phone{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    color: #49C5C6;
+	transform: rotate(-45deg);
+}
+
+.section-cv .icon-mobile{
+	display: inline-block;
+    transform: rotate(90deg);
+    font-size: 33px;
+    line-height: .2 !important;
+}
+
+.icon-mobile:before{
+	line-height: 0 !important;
+}
+
+.section-cv-header h2{
+	color: #49C5C6;
+    display: inline;
+    margin: auto;
+    position: absolute;
+    padding: 8px;
+}
+
+.header-section-bar{
+    width: 100%;
+    height: 4px;
+    margin-top: -2px;
+    background: #49C5C6;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+}
+
+/*.cortar{
+  	width: 190px;
+  	text-overflow:ellipsis;
+  	white-space:nowrap; 
+  	overflow:hidden; 
+}
+.cortar:hover {
+  	width: 290px;
+  	white-space: initial;
+  	overflow:visible;
+  	cursor: pointer;
+}*/
+
+/********************************** 
+********* Estilos de Resúmen ******
+***********************************/
+
+.section-cv article{
+	position: relative;
+    top: 12px;
+    padding: 0 10px;
+    height: 380px;
+    overflow: auto;
+}
+
+.resumen-info{
+	height: 400px;
+	margin: 10px 0;
+	/*overflow-y: scroll;*/
+	/*background: #49C5C6;*/
+}
+
+.section-cv p{
+	margin-top: 0;
+	text-indent: 15px;
+	line-height: 20px;
+}
+
+/********************************** 
+********* Estilos de Skills ******
+***********************************/
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 10px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+
+/********************************** 
+********* Estilos de tabla *********
+***********************************/
+
+.xperience{
+	margin-top: 25px;
+}
+
+.tabla-cont{
+  	overflow-x: auto;
+  	width: 100%;
+  	height: 320px;
+}
+
+td, th {
+  	border: 1px solid #004a60;
+  	text-align: left;
+  	padding: 8px;
+}
+
+.tabla-info{
+	border-collapse: collapse;
+ 	width: 100%;
+}
+
+.tabla-info caption{
+	color: #fff;
+	-webkit-text-shadow: 2px 1px 2px rgba(0,0,0,.8);
+	-moz-text-shadow: 2px 1px 2px rgba(0,0,0,.8);
+	-ms-text-shadow: 2px 1px 2px rgba(0,0,0,.8);
+	-o-text-shadow: 2px 1px 2px rgba(0,0,0,.8);
+	text-shadow: 2px 1px 2px rgba(0,0,0,.8);
+	padding: 8px;
+	height: 35px;
+	border: 1px solid #004a60;
+	border-bottom: 0;
+	border-radius: 8px 8px 0 0;
+	background: rgba(44,199,199,1);
+	background: -moz-linear-gradient(top, rgba(44,199,199,1) 0%, rgba(97,224,224,1) 52%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(44,199,199,1)), color-stop(52%, rgba(97,224,224,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(44,199,199,1) 0%, rgba(97,224,224,1) 52%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(44,199,199,1) 0%, rgba(97,224,224,1) 52%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(44,199,199,1) 0%, rgba(97,224,224,1) 52%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(44,199,199,1) 0%, rgba(97,224,224,1) 52%, rgba(255,255,255,1) 100%);
+}
+
+.tabla-info th{
+  	font-size: 12px;
+  	color: #004a60;
+  	background: #d8d8d8;
+}
+
+.tabla-info td{
+  	font-size: 11px;
+}
+
+tr:nth-child(even) {
+ 	background-color: #EBEBEB;
+}
+
+tr:nth-child(odd) {
+  	background-color: #fff;
 }
 
 /********************************** 
 ****** Estilos de Proyectos *******
 ***********************************/
 
+.section-design{
+	color: #49C5C6;
+	-webkit-text-shadow: 1px 2px 3px rgba(25, 15, 105, 0.77);
+	-moz-text-shadow: 1px 2px 3px rgba(25, 15, 105, 0.77);
+	-ms-text-shadow: 1px 2px 3px rgba(25, 15, 105, 0.77);
+	-o-text-shadow: 1px 2px 3px rgba(25, 15, 105, 0.77);
+	text-shadow: 1px 2px 3px rgba(25, 15, 105, 0.77);
+}
+
 .section--titulo{
 	text-align: center;
 	font-size: 40px;
 	color: #49C5C6;
- 
+}
+
+.info-columna{
+	background: #49C5C6;
+	color: #fff;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.info-columna img{
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+.info-txt{
+	font-size: 14px;
+}
+
+svg {
+  width: 300px;
+  height: 60px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: black;
+}
+

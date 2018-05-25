@@ -1,0 +1,93 @@
+.contacto{
+	background: #49C5C6;
+	padding: 15px;
+}
+
+.contacto h2{
+	color: #fff;
+}
+
+.datos-contacto{
+	display: block;
+	text-align: left;
+	height: 120px;
+	line-height: 1;
+	padding: 15px;
+}
+
+.datos-contacto .icon-whatsapp, .datos-contacto .icon-envelope{	
+	display: inline-block;  
+    font-size: 1.2em; 
+    margin-right: 8px;  
+}
+
+.datos-contacto p{
+	color: #fff;
+	margin: 5px 0;
+	line-height: 2;
+	height: 30px;
+}
+
+label {
+	color: #fff;
+	display:block;
+	margin-top:20px;
+	letter-spacing:1px;
+}
+
+/*.formulario {
+	display:block;
+	margin: 0 auto;
+	width: 510px;
+	color: #666666;
+	font-family:Arial;
+}*/
+
+form {
+	margin:0 auto;
+}
+
+input, textarea {
+	width: 100%;
+	height: 40px;
+	background:#eee;
+	border:2px solid #f6f6f6;
+	border-radius: 20px;
+	padding:10px;
+	margin-top:5px;
+	font-size:15px;
+	color:#000;
+}
+
+textarea {
+	height:150px;
+}
+input:-webkit-autofill{
+	background-color: #fff !important;
+}
+
+#submit {
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+.btn-enviar{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #499dc6;
+    background: linear-gradient(to right, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 55%, rgba(247,247,247,1) 100%);
+}
+
+.copyR{
+	text-align: center;
+	margin: 15px auto;
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 3;
+	color: #fff;
+}
