@@ -130,7 +130,7 @@
     margin: 0 auto;
   }
 
-    .section-cv-book article:nth-child(4),
+  .section-cv-book article:nth-child(4),
   .section-cv-book article:nth-child(5),
   .section-cv-book article:nth-child(6){
    display: none;
@@ -208,7 +208,7 @@
   }
 
   .section-cv-header, .card, .xperience, .tabla-info{
-    width: 80% !important;
+    width: 90% !important;
     margin: 20px auto;
   }
 
@@ -218,7 +218,7 @@
     margin: 0 auto;
   }
 
-  .section-design{
+  .section-design, .footer-cont{
     width: 80%;
     margin: 0 auto;
   }
@@ -344,7 +344,7 @@
     margin: 25px auto 0;
   }
 
-  .section-cv-header, .card{
+  .section-cv-header, .card, .tabla-cont{
     width: 80% !important;
     margin: 20px auto;
   }
@@ -367,8 +367,9 @@
   }
 
   .section-cv-book, .section-cv-book-2{
+    width: 80%;
     display: flex;
-    margin: 15px 0;
+    margin: 0 auto;
     justify-content: space-between;
   }
 
