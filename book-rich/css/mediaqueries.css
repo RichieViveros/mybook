@@ -7,7 +7,7 @@
 
   .header{
     position: fixed;
-    background: #0f245bb8;
+    background: rgba(4, 26, 90, 0.71);
     width: 100%;
     height: 47px;
     z-index: 2;
@@ -18,7 +18,7 @@
     width: 85%;
     margin: 0 auto;
     left: 50%;
-    margin-left: -590px;
+    transform: translateX(-50%);
   }
 
   .banner{
@@ -75,10 +75,6 @@
 
   .banner-titulo{
     font-size: 2em;
-  }
-  
-  .banner--img{
-    height: 100vh;
   }
 
   .foto-perfil{
@@ -169,6 +165,66 @@
 
 @media (min-width: 1025px) and (max-width: 1366px) {
 
+  .header{
+    position: fixed;
+    background: rgba(4, 26, 90, 0.71);
+    width: 100%;
+    height: 47px;
+    z-index: 2;
+  }
+
+  .header .contenedor{
+    position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner{
+    margin-top: 0;
+  }
+
+  .nav{
+    position: static;
+    width: auto;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .menu__link:hover{
+    background: none !important;
+    color: #fff !important;
+  }
+
+  .menu__link span{
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu__link span:hover{ 
+    transition: all .2s ease-in-out;
+    border-bottom: 2px solid #fff;
+    border-radius: 0 0 3px 3px;
+  }
+
+  .menu  span, .menu__item{
+    font-size: 14px !important;
+  }
+
+  .menu__link{
+    background: none;
+  }
+
+  .active{
+    background: #fff;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
   .banner-contenedor{
     top: 40% !important;
   }
@@ -196,7 +252,7 @@
     height: 200px;
   }
 
-   .perfil span{
+  .perfil span{
     font-size: 16px;
     display: block;
   }
@@ -207,9 +263,9 @@
     margin: 25px auto 0;
   }
 
-  .section-cv-header, .card, .xperience, .tabla-info{
+  .section-cv-header, .section-cv-book, .section-cv-book-2, .card, .xperience, .tabla-info{
     width: 90% !important;
-    margin: 20px auto;
+    margin: 20px auto !important;
   }
 
   .resumen-info{

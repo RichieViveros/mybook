@@ -129,6 +129,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .menu__link{
+	font-size: 14px;
 	display: block;
 	padding: 15px;
 	background: #49C5C6;
@@ -297,7 +298,7 @@ hr.separacion {
 }
 
 .menu .icon-home, .menu .icon-pencil, .menu .icon-skills, .menu .icon-briefcase, .menu .icon-phone{
-	font-size: 14px;
+
 	line-height: 1;
     top: 2px;
     position: relative;
